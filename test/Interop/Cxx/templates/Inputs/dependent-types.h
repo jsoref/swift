@@ -26,7 +26,7 @@ template<class T, class U>
 M<U> differentDependentArgAndRet(M<T> a) { return {a.value}; }
 
 template<class T>
-M<T> dependentReturnTypeInffered(T a) { return {a}; }
+M<T> dependentReturnTypeInferred(T a) { return {a}; }
 
 template<class T>
 M<T> dependentReturnTypeSameAsArg(M<T> a) { return {a.value}; }
@@ -36,7 +36,7 @@ template<class T, class U>
 typename M<U>::U complexDifferentDependentArgAndRet(typename M<T>::U  a) { return a.value; }
 
 template<class T>
-typename M<T>::U complexDependantReturnTypeInffered(T a) { return a; }
+typename M<T>::U complexDependantReturnTypeInferred(T a) { return a; }
 
 template<class T>
 typename M<T>::U complexDependantReturnTypeSameAsArg(typename M<T>::U  a) { return a.value; }
