@@ -26,10 +26,10 @@ template<class T, class U>
 M<U> differentDependentArgAndRet(M<T> a) { return {a.value}; }
 
 template<class T>
-M<T> dependantReturnTypeInffered(T a) { return {a}; }
+M<T> dependentReturnTypeInffered(T a) { return {a}; }
 
 template<class T>
-M<T> dependantReturnTypeSameAsArg(M<T> a) { return {a.value}; }
+M<T> dependentReturnTypeSameAsArg(M<T> a) { return {a.value}; }
 
 // TODO: still not supported yet (rdar://89034704)
 template<class T, class U>
